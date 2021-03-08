@@ -1,0 +1,16 @@
+//color variable
+$color-primaty:#f21d44;
+$color-primaty-dark:#a61731;
+$color-primaty-light:#d92b5a;
+$color-primaty-verylight: #f27e9d;
+$color-text-light: #f2f2f2;
+$color-text-dark: #330009;
+
+//clear everything
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}

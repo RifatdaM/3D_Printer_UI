@@ -1,0 +1,25 @@
+{
+  "name": "3d_printer_ui",
+  "version": "1.0.0",
+  "description": "3D printer customization page UI",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RifatdaM/3D_Printer_UI.git"
+  },
+  "author": "Rakibul Hasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RifatdaM/3D_Printer_UI/issues"
+  },
+  "homepage": "https://github.com/RifatdaM/3D_Printer_UI#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
