@@ -1,3 +1,9 @@
+//FONT
+@font-face{
+  src: url(/fonts/BebasNeue-Regular.ttf);
+  font-family: bebas;
+}
+
 //color variable
 $color-primaty: #f21d44;
 $color-primaty-dark: #a61731;
@@ -14,7 +20,9 @@ $color-text-dark: #330009;
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  font-size: 10px;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -24,6 +32,7 @@ body {
   padding: 30px;
 }
 
+//header
 .header {
   height: 95vh;
   background-image: linear-gradient(
@@ -36,12 +45,60 @@ body {
   background-position: top;
   position: relative;
 
-  &__img{
-      position: absolute;
-      right: 10px;
-      &-size{
-          height: 200px;
-      }
+  &__img {
+    position: absolute;
+    right: 10px;
+    margin: auto;
+    &-size {
+      height: 600px;
+    }
+  }
+
+  &__info {
+    margin: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    &-top{
+      font-size: 1.8rem;
+      font-weight: lighter;
+      margin-bottom: 12px;
+    }
+    &-title{
+      font-family: bebas, "Poppins", sans-serif;
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    &-product_dis{
+      font-size: 1.6rem;
+      font-weight: lighter;
+      margin-bottom: 0;
+    }
+    &-learn_more{
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: lighter;
+      color: $color-text-light;
       
+      
+      &:hover{
+        text-decoration: none;
+        color: $color-text-light;
+        font-weight: bold;
+        
+      }
+    }
+    &-special_feature{
+      margin-top: 32px;
+      font-family: bebas, "Poppins", sans-serif;
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+    &-feature{
+      font-size: 1.6rem;
+      font-weight: lighter;
+      color: $color-text-light;
+      margin-top: 10px;
+    }
   }
 }
