@@ -1,5 +1,5 @@
 //FONT
-@font-face{
+@font-face {
   src: url(/fonts/BebasNeue-Regular.ttf);
   font-family: bebas;
 }
@@ -20,7 +20,7 @@ $color-text-dark: #330009;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   font-size: 10px;
 }
 body {
@@ -49,56 +49,146 @@ body {
     position: absolute;
     right: 10px;
     margin: auto;
+
     &-size {
       height: 600px;
     }
   }
 
   &__info {
-    margin: 60px;
+    margin: 0 60px 0 60px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    &-top{
+
+    &-top {
       font-size: 1.8rem;
       font-weight: lighter;
       margin-bottom: 12px;
+      display: block;
+      animation-name: moveInTop;
+      animation-duration: 1s;
     }
-    &-title{
+    &-title {
       font-family: bebas, "Poppins", sans-serif;
       font-size: 4rem;
       margin-bottom: 10px;
+      letter-spacing: 5px;
+      animation-name: moveInTop;
+      animation-duration: 1s;
     }
-    &-product_dis{
+    &-product_dis {
       font-size: 1.6rem;
       font-weight: lighter;
       margin-bottom: 0;
+      animation-name: moveInTop;
+      animation-duration: 1s;
     }
-    &-learn_more{
+    &-learn_more {
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: lighter;
       color: $color-text-light;
-      
-      
-      &:hover{
+      display: block;
+      animation-name: moveInTop;
+      animation-duration: 1s;
+
+      &:hover {
         text-decoration: none;
         color: $color-text-light;
-        font-weight: bold;
-        
+        font-weight: 300;
       }
     }
-    &-special_feature{
+    &-special_feature {
       margin-top: 32px;
       font-family: bebas, "Poppins", sans-serif;
       font-size: 2.4rem;
       margin-bottom: 16px;
+      display: block;
+      animation-name: moveInTop;
+      animation-duration: 1s;
     }
-    &-feature{
+    &-feature {
       font-size: 1.6rem;
       font-weight: lighter;
       color: $color-text-light;
       margin-top: 10px;
+      display: block;
+      animation-name: moveInTop;
+      animation-duration: 1s;
     }
+    &-price {
+      margin-top: 62px;
+      font-size: 4.8rem;
+      font-family: bebas, "Poppins", sans-serif;
+      display: block;
+      animation-name: moveInTop;
+      animation-duration: 1s;
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.button {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: bebas, "Poppins", sans-serif;
+    font-size: 3.6rem;
+    animation-name: moveInTop;
+    animation-duration: 1s;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+  &-white {
+    background-color: $color-text-light;
+    color: $color-primaty;
+    padding: 29px;
+    animation-name: moveInTop;
+    animation-duration: 1s;
+    &:hover {
+      padding: 29px 50px;
+    }
+  }
+  &-outline {
+    border-color: $color-text-light;
+    border: 2px solid;
+    color: $color-text-light;
+    padding: 27px 70px;
+    margin-left: 64px;
+    animation-name: moveInTop;
+    animation-duration: 1s;
+    &:hover {
+      padding: 29px 90px;
+    }
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: $color-primaty;
+    border: 0;
+    color: $color-text-light;
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+//animation
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
