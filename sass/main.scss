@@ -1,7 +1,7 @@
 //color variable
-$color-primaty:#f21d44;
-$color-primaty-dark:#a61731;
-$color-primaty-light:#d92b5a;
+$color-primaty: #f21d44;
+$color-primaty-dark: #a61731;
+$color-primaty-light: #d92b5a;
 $color-primaty-verylight: #f27e9d;
 $color-text-light: #f2f2f2;
 $color-text-dark: #330009;
@@ -9,8 +9,39 @@ $color-text-dark: #330009;
 //clear everything
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-text-light;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to top right,
+      rgb(166, 23, 49),
+      rgba(242, 126, 157, 0.77)
+    ),
+    url(../img/background-img.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__img{
+      position: absolute;
+      right: 10px;
+      &-size{
+          height: 200px;
+      }
+      
+  }
 }

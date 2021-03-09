@@ -3,4 +3,24 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #f2f2f2;
+  padding: 30px; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to top right, #a61731, rgba(242, 126, 157, 0.77)), url(../img/background-img.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header__img {
+    position: absolute;
+    right: 10px; }
+    .header__img-size {
+      height: 200px; }
