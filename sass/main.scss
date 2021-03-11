@@ -11,6 +11,16 @@ $color-primaty-light: #d92b5a;
 $color-primaty-verylight: #f27e9d;
 $color-text-light: #f2f2f2;
 $color-text-dark: #330009;
+$color-primaty-superlight: #FBE4E4;
+
+//font
+$primary-font: "Poppins", sans-serif;
+$secondary-font: bebas, "Poppins", sans-serif;
+
+//grid
+$grid-width: 200rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
 
 //clear everything
 *,
@@ -24,22 +34,18 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: $primary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: $color-text-light;
-  padding: 30px;
+  margin: 0 3rem;
 }
 
 //header
 .header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to top right,
-      rgb(166, 23, 49),
-      rgba(242, 126, 157, 0.77)
-    ),
+  height: 100vh;
+  background-image: linear-gradient(to top right, rgb(166, 23, 49), rgba(242, 126, 157, 0.77)),
     url(../img/background-img.jpg);
   background-size: cover;
   background-position: top;
@@ -47,8 +53,9 @@ body {
 
   &__img {
     position: absolute;
-    right: 10px;
-    margin: auto;
+    right: 10rem;
+    top: 50%;
+    transform: translate(0, -50%);
 
     &-size {
       height: 600px;
@@ -70,7 +77,7 @@ body {
       animation-duration: 1s;
     }
     &-title {
-      font-family: bebas, "Poppins", sans-serif;
+      font-family: $secondary-font;
       font-size: 4rem;
       margin-bottom: 10px;
       letter-spacing: 5px;
@@ -101,7 +108,7 @@ body {
     }
     &-special_feature {
       margin-top: 32px;
-      font-family: bebas, "Poppins", sans-serif;
+      font-family: $secondary-font;
       font-size: 2.4rem;
       margin-bottom: 16px;
       display: block;
@@ -120,7 +127,7 @@ body {
     &-price {
       margin-top: 62px;
       font-size: 4.8rem;
-      font-family: bebas, "Poppins", sans-serif;
+      font-family: $secondary-font;
       display: block;
       animation-name: moveInTop;
       animation-duration: 1s;
@@ -129,12 +136,13 @@ body {
   }
 }
 
+//button
 .button {
   &:link,
   &:visited {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: bebas, "Poppins", sans-serif;
+    font-family: $secondary-font;
     font-size: 3.6rem;
     animation-name: moveInTop;
     animation-duration: 1s;
@@ -175,6 +183,62 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
+}
+
+//grid
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  .col-1-of-2 {
+    width: calc(100% / 2);
+  }
+  .col-1-of-3 {
+    width: calc(100% / 3);
+  }
+}
+
+//product list
+.productCard {
+  height: 60vh;
+  width: auto;
+  position: relative;
+  &__info {
+    color: $color-primaty;
+    position: absolute;
+    margin: 0 2rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    &-title {
+      font-size: 4rem;
+      font-family: $secondary-font;
+      margin-bottom: 1.4rem;
+    }
+    &-special_feature{
+      font-size: 2.4rem;
+      font-family: $secondary-font;
+      display: block;
+    }
+    &-feature{
+      font-size: 1.4rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    &-price{
+      font-size: 3.2rem;
+      display: block;
+      margin-bottom: 3.2rem;
+      font-family: $secondary-font;
+    }
+  }
+}
+
+//bg_color
+.pColor1{
+  background-color: $color-primaty-superlight;
+}
+.pColorw{
+  background-color: $color-text-light;
 }
 
 //animation
