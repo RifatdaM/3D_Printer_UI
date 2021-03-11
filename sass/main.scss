@@ -11,7 +11,10 @@ $color-primaty-light: #d92b5a;
 $color-primaty-verylight: #f27e9d;
 $color-text-light: #f2f2f2;
 $color-text-dark: #330009;
-$color-primaty-superlight: #FBE4E4;
+$color-primaty-superlight: #fbe4e4;
+
+//shadow
+$shadow-1: rgba(0, 0, 0, 0.2);
 
 //font
 $primary-font: "Poppins", sans-serif;
@@ -56,9 +59,10 @@ body {
     right: 10rem;
     top: 50%;
     transform: translate(0, -50%);
-
     &-size {
       height: 600px;
+      animation-name: moveInTop;
+      animation-duration: 1s;
     }
   }
 
@@ -153,23 +157,23 @@ body {
   &-white {
     background-color: $color-text-light;
     color: $color-primaty;
-    padding: 29px;
+    padding: 2.9rem;
     animation-name: moveInTop;
     animation-duration: 1s;
     &:hover {
-      padding: 29px 50px;
+      padding: 2.9rem 5rem;
     }
   }
   &-outline {
     border-color: $color-text-light;
     border: 2px solid;
     color: $color-text-light;
-    padding: 27px 70px;
+    padding: 2.7rem 7rem;
     margin-left: 64px;
     animation-name: moveInTop;
     animation-duration: 1s;
     &:hover {
-      padding: 29px 90px;
+      padding: 2.9rem 9rem;
     }
   }
   &:hover {
@@ -182,6 +186,48 @@ body {
   &:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.buttonSmall {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    font-size: 2.4rem;
+    display: block;
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+  &-red {
+    background-color: $color-primaty;
+    color: $color-text-light;
+    padding: 1.8rem 4.8rem;
+    margin-bottom: 2.4rem;
+    &:hover {
+      padding: 2rem 6rem;
+    }
+  }
+  &-outlineRed {
+    border-color: $color-primaty;
+    border: 2px solid;
+    color: $color-primaty;
+    padding: 1.8rem 6.6rem;
+    &:hover {
+      padding: 2rem 8rem;
+    }
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: $color-text-light;
+    color: $color-primaty;
+    border: 0;
+  }
+  &:active{
+    transform: translateY(-1px);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -203,6 +249,8 @@ body {
   height: 60vh;
   width: auto;
   position: relative;
+  z-index: 1;
+  transition: all 0.2s;
   &__info {
     color: $color-primaty;
     position: absolute;
@@ -214,42 +262,47 @@ body {
       font-family: $secondary-font;
       margin-bottom: 1.4rem;
     }
-    &-special_feature{
+    &-special_feature {
       font-size: 2.4rem;
       font-family: $secondary-font;
       display: block;
     }
-    &-feature{
+    &-feature {
       font-size: 1.4rem;
       display: block;
       margin-bottom: 1rem;
     }
-    &-price{
+    &-price {
       font-size: 3.2rem;
       display: block;
       margin-bottom: 3.2rem;
       font-family: $secondary-font;
     }
   }
-  &__img{
+  &__img {
     position: absolute;
-    right: 2rem;
+    right: 4rem;
     top: 50%;
     transform: translate(0, -50%);
-    &-size{
+    &-size {
       height: 300px;
     }
   }
+  // &:hover {
+  //   transform: scale(1.05);
+  //   box-shadow: 0 2.5rem 4rem $shadow-1;
+  //   z-index: 20;
+  //   background-color: $color-primaty;
+  //   color: $color-text-light;
+  //   border-radius: 6px;
+  // }
 }
-
-
-
 
 //bg_color
-.pColor1{
+.pColor1 {
   background-color: $color-primaty-superlight;
 }
-.pColorw{
+.pColorw {
   background-color: $color-text-light;
 }
 

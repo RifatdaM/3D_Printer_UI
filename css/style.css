@@ -32,7 +32,9 @@ body {
     top: 50%;
     transform: translate(0, -50%); }
     .header__img-size {
-      height: 600px; }
+      height: 600px;
+      animation-name: moveInTop;
+      animation-duration: 1s; }
   .header__info {
     margin: 0 60px 0 60px;
     position: absolute;
@@ -109,22 +111,22 @@ body {
 .button-white {
   background-color: #f2f2f2;
   color: #f21d44;
-  padding: 29px;
+  padding: 2.9rem;
   animation-name: moveInTop;
   animation-duration: 1s; }
   .button-white:hover {
-    padding: 29px 50px; }
+    padding: 2.9rem 5rem; }
 
 .button-outline {
   border-color: #f2f2f2;
   border: 2px solid;
   color: #f2f2f2;
-  padding: 27px 70px;
+  padding: 2.7rem 7rem;
   margin-left: 64px;
   animation-name: moveInTop;
   animation-duration: 1s; }
   .button-outline:hover {
-    padding: 29px 90px; }
+    padding: 2.9rem 9rem; }
 
 .button:hover {
   transform: translateY(-3px);
@@ -137,6 +139,42 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
+.buttonSmall:link, .buttonSmall:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: bebas, "Poppins", sans-serif;
+  font-size: 2.4rem;
+  display: block;
+  border-radius: 6px;
+  transition: all 0.2s; }
+
+.buttonSmall-red {
+  background-color: #f21d44;
+  color: #f2f2f2;
+  padding: 1.8rem 4.8rem;
+  margin-bottom: 2.4rem; }
+  .buttonSmall-red:hover {
+    padding: 2rem 6rem; }
+
+.buttonSmall-outlineRed {
+  border-color: #f21d44;
+  border: 2px solid;
+  color: #f21d44;
+  padding: 1.8rem 6.6rem; }
+  .buttonSmall-outlineRed:hover {
+    padding: 2rem 8rem; }
+
+.buttonSmall:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+  color: #f21d44;
+  border: 0; }
+
+.buttonSmall:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2); }
+
 .row {
   max-width: 200rem;
   margin: 0 auto; }
@@ -148,7 +186,9 @@ body {
 .productCard {
   height: 60vh;
   width: auto;
-  position: relative; }
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s; }
   .productCard__info {
     color: #f21d44;
     position: absolute;
@@ -174,14 +214,14 @@ body {
       font-family: bebas, "Poppins", sans-serif; }
   .productCard__img {
     position: absolute;
-    right: 2rem;
+    right: 4rem;
     top: 50%;
     transform: translate(0, -50%); }
     .productCard__img-size {
       height: 300px; }
 
 .pColor1 {
-  background-color: #FBE4E4; }
+  background-color: #fbe4e4; }
 
 .pColorw {
   background-color: #f2f2f2; }
