@@ -39,7 +39,7 @@ html {
 body {
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 16px;
+  //font-size: 16px;
   line-height: 1.7;
   color: $color-text-light;
   margin: 0 3rem;
@@ -56,13 +56,14 @@ body {
 
   &__img {
     position: absolute;
-    right: 10rem;
+    left: 50%;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(20%, -50%);
     &-size {
-      height: 600px;
+      width: 60%;
       animation-name: moveInTop;
       animation-duration: 1s;
+      
     }
   }
 
@@ -137,6 +138,123 @@ body {
       animation-duration: 1s;
       margin-bottom: 64px;
     }
+  }
+}
+
+//product list
+.productCard {
+  height: 600px;
+  width: auto;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s;
+  &__info {
+    color: $color-primaty;
+    position: absolute;
+    margin: 0 2rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    &-title {
+      font-size: 4rem;
+      font-family: $secondary-font;
+      margin-bottom: 1.4rem;
+    }
+    &-special_feature {
+      font-size: 2.4rem;
+      font-family: $secondary-font;
+      display: block;
+    }
+    &-feature {
+      font-size: 1.4rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    &-price {
+      font-size: 3.2rem;
+      display: block;
+      margin-bottom: 3.2rem;
+      font-family: $secondary-font;
+    }
+  }
+  &__img {
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    &-size {
+      height: 300px;
+    }
+  }
+  // &:hover {
+  //   transform: scale(1.05);
+  //   box-shadow: 0 2.5rem 4rem $shadow-1;
+  //   z-index: 20;
+  //   background-color: $color-primaty;
+  //   color: $color-text-light;
+  //   border-radius: 6px;
+  // }
+}
+
+//custom
+.custom{
+  background-color: $color-text-light;
+ height: 95vh;
+&__UpText{
+  padding-top: 4rem;
+  text-align: center;
+  font-size: 2.4rem;
+  color: $color-text-dark;
+}
+ &__MainText{
+   padding-top: 1.6rem;
+   text-align: center;
+   font-size: 6.4rem;
+   color: $color-text-dark;
+   font-family: $secondary-font;
+  
+ }
+}
+
+.customizeOptionsTop{
+  padding-top: 120px;
+  .optionName{   
+    
+    padding-left: 160px;
+    color: $color-primaty;
+    font-family: $secondary-font;
+    font-size: 3.2rem;
+  }
+  .option{
+    font-size: 2.6rem;
+    font-family: $primary-font;
+    color: $color-text-dark;
+    padding-left: 36px;
+  }
+}
+.customizeOptions{
+  padding-top: 20px;
+  .optionName{   
+    
+    padding-left: 160px;
+    color: $color-primaty;
+    font-family: $secondary-font;
+    font-size: 3.2rem;
+  }
+  .option{
+    font-size: 2.6rem;
+    font-family: $primary-font;
+    color: $color-text-dark;
+    padding-left: 36px;
+  }
+  .form-select{
+    margin-left: 36px;
+    font-family: $primary-font;
+    font-size: 2.6rem;
+    padding: 8px 16px;
+    border: 2px solid;
+    border-color: $color-primaty;
+    border-radius: 6px;
+    color: $color-text-dark;
   }
 }
 
@@ -231,79 +349,29 @@ body {
   }
 }
 
+//customize
+
+
+
+//bg_color
+.pColor1 {
+  background-color: $color-primaty-superlight;
+}
+.pColor2 {
+  background-color: $color-text-light;
+}
+
 //grid
 .row {
   max-width: $grid-width;
   margin: 0 auto;
 
   .col-1-of-2 {
-    width: calc(100% / 2);
+    width: calc((100% - 8rem) / 2);
   }
   .col-1-of-3 {
     width: calc(100% / 3);
   }
-}
-
-//product list
-.productCard {
-  height: 60vh;
-  width: auto;
-  position: relative;
-  z-index: 1;
-  transition: all 0.2s;
-  &__info {
-    color: $color-primaty;
-    position: absolute;
-    margin: 0 2rem;
-    top: 50%;
-    transform: translate(0, -50%);
-    &-title {
-      font-size: 4rem;
-      font-family: $secondary-font;
-      margin-bottom: 1.4rem;
-    }
-    &-special_feature {
-      font-size: 2.4rem;
-      font-family: $secondary-font;
-      display: block;
-    }
-    &-feature {
-      font-size: 1.4rem;
-      display: block;
-      margin-bottom: 1rem;
-    }
-    &-price {
-      font-size: 3.2rem;
-      display: block;
-      margin-bottom: 3.2rem;
-      font-family: $secondary-font;
-    }
-  }
-  &__img {
-    position: absolute;
-    right: 4rem;
-    top: 50%;
-    transform: translate(0, -50%);
-    &-size {
-      height: 300px;
-    }
-  }
-  // &:hover {
-  //   transform: scale(1.05);
-  //   box-shadow: 0 2.5rem 4rem $shadow-1;
-  //   z-index: 20;
-  //   background-color: $color-primaty;
-  //   color: $color-text-light;
-  //   border-radius: 6px;
-  // }
-}
-
-//bg_color
-.pColor1 {
-  background-color: $color-primaty-superlight;
-}
-.pColorw {
-  background-color: $color-text-light;
 }
 
 //animation
