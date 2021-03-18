@@ -63,7 +63,6 @@ body {
       width: 60%;
       animation-name: moveInTop;
       animation-duration: 1s;
-      
     }
   }
 
@@ -196,57 +195,54 @@ body {
 }
 
 //custom
-.custom{
+.custom {
   background-color: $color-text-light;
- height: 95vh;
-&__UpText{
-  padding-top: 4rem;
-  text-align: center;
-  font-size: 2.4rem;
-  color: $color-text-dark;
-}
- &__MainText{
-   padding-top: 1.6rem;
-   text-align: center;
-   font-size: 6.4rem;
-   color: $color-text-dark;
-   font-family: $secondary-font;
-  
- }
+  height: 1100px;
+  &__UpText {
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 2.4rem;
+    color: $color-text-dark;
+  }
+  &__MainText {
+    padding-top: 1.6rem;
+    text-align: center;
+    font-size: 6.4rem;
+    color: $color-text-dark;
+    font-family: $secondary-font;
+  }
 }
 
-.customizeOptionsTop{
+.customizeOptionsTop {
   padding-top: 120px;
-  .optionName{   
-    
+  .optionName {
     padding-left: 160px;
     color: $color-primaty;
     font-family: $secondary-font;
     font-size: 3.2rem;
   }
-  .option{
+  .option {
     font-size: 2.6rem;
     font-family: $primary-font;
     color: $color-text-dark;
     padding-left: 36px;
   }
 }
-.customizeOptions{
+.customizeOptions {
   padding-top: 20px;
-  .optionName{   
-    
+  .optionName {
     padding-left: 160px;
     color: $color-primaty;
     font-family: $secondary-font;
     font-size: 3.2rem;
   }
-  .option{
+  .option {
     font-size: 2.6rem;
     font-family: $primary-font;
     color: $color-text-dark;
     padding-left: 36px;
   }
-  .form-select{
+  .form-select {
     margin-left: 36px;
     font-family: $primary-font;
     font-size: 2.6rem;
@@ -256,6 +252,43 @@ body {
     border-radius: 6px;
     color: $color-text-dark;
   }
+}
+.productImgInfo {
+  height: 540px;
+  width: 540px;
+  background-color: $color-text-light;
+  margin-top: 200px;
+  left: 10px;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  .allInfo{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    .productImg {
+      width: 50%;
+      margin: 20px 135px;
+    }
+    .productName {
+      font-family: $secondary-font;
+
+      color: $color-primaty;
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    .productPrice {
+      font-family: $primary-font;
+      color: $color-primaty;
+      font-size: 2.6rem;
+      text-align: center;
+    }
+  }
+}
+.productImgInfo:hover{
+  background-color: $color-primaty-verylight;
+  color: $color-text-light;
+  transition: all 0.2s;
 }
 
 //button
@@ -343,15 +376,13 @@ body {
     color: $color-primaty;
     border: 0;
   }
-  &:active{
+  &:active {
     transform: translateY(-1px);
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
   }
 }
 
 //customize
-
-
 
 //bg_color
 .pColor1 {
