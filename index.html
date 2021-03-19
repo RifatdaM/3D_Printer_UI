@@ -155,104 +155,331 @@
       </div>
     </section>
 
-    <section class="custom">
-      <h4 class="custom__UpText">Make your own</h4>
-      <h3 class="custom__MainText">Customize 3D Printer</h3>
-      <div class="container-fluid">
+    <section class="customizer">
+      <div class="topTitle">
+        <h4 class="title">
+          <span class="subTitle">Make your Own</span>
+          <span class="mainTitle">Customize 3D Printer</span>
+        </h4>
+      </div>
+      <div class="container-fluid infoBox">
         <div class="row">
           <div class="col-8">
-            <h4 class="customizeOptionsTop">
-              <span class="optionName bedSize col-2"> bed size(mm) </span>
-              <span class="option col-2">220 X 220</span>
-              <span class="option col-2">300 X 300</span>
-              <span class="option col-2">440 X 440</span>
-              <span class="option col-2">600 X 600</span>
-            </h4>
-            <h4 class="customizeOptions">
-              <span class="optionName bedSize"> height (mm) </span>
-              <select class="form-select" aria-label="Default select example">
-                <option value="1">150</option>
-                <option value="2">160</option>
-                <option value="3">170</option>
-                <option value="4">180</option>
-                <option value="5">190</option>
-                <option value="6">200</option>
-                <option value="7">210</option>
-                <option value="8">220</option>
-                <option value="9">230</option>
-                <option value="10">240</option>
-                <option value="11">250</option>
-                <option value="12">260</option>
-                <option value="13">270</option>
-                <option value="14">280</option>
-                <option value="15">290</option>
-                <option value="15">300</option>
-              </select>
-            </h4>
 
-            <h4 class="customizeOptions">
-              <span class="optionName col-2"> Nozzel </span>
-              <span class="option col-2">Duel</span>
-              <span class="option col-2">Single</span>
-            </h4>
-            <h4 class="customizeOptions">
-              <span class="optionName"> Display </span>
-              <span class="option">Touch</span>
-              <span class="option">LCD Noob</span>
-              <span class="option"> Touch + LCD Noob</span>
-            </h4>
-            <h4 class="customizeOptions">
-              <span class="optionName"> Motor driver </span>
-              <span class="option">Silent</span>
-              <span class="option">Normal</span>
-            </h4>
-            <h4 class="customizeOptions">
-              <span class="optionName"> Cover </span>
-              <span class="option">Yes</span>
-              <span class="option">No</span>
-            </h4>
-            <h4 class="customizeOptions">
-              <span class="optionName"> Filament chambers </span>
-              <span class="option">Yes</span>
-              <span class="option">No</span>
-            </h4>
-            <h4 class="customizeOptions">
-              <span class="optionName"> ups module </span>
-              <span class="option">Yes</span>
-              <span class="option">No</span>
-            </h4>
-            <h4 class="customizeOptions">
-              <span class="optionName"> Auto Bed leveling </span>
-              <span class="option">Yes</span>
-              <span class="option">No</span>
-            </h4>
-            <h4 class="customizeOptions">
-              <span class="optionName"> wifi connectivity </span>
-              <span class="option">Yes</span>
-              <span class="option">No</span>
-            </h4>
-            <h4 class="customizeOptions">
-              <span class="optionName"> Filament </span>
-              <span class="option">1KG</span>
-              <span class="option">2KG</span>
-              <span class="option">3KG</span>
-            </h4>
-          </div>
-          <div class="col-4">
-            <div class="productImgInfo">
-              <div class="allInfo">
-                <img
-                  class="productImg"
-                  src="/img/3d_printer.png"
-                  alt=""
-                  srcset=""
-                />
-                <h4 class="productName">200 X 200 MM Bed</h4>
-                <h4 class="productPrice">10,000 BDT</h4>
+            <!-- Bed Size -->
+            <div class="row selector">
+              <div class="col-3 offset-md-1">
+                <span class="productName">Bed Size (MM)</span>
+              </div>
+              <div class="col-2">
+                <input
+                  type="radio"
+                  name="productType"
+                  id="1"
+                  class="hidebx"
+                  value=""
+                /><label for="1" class="lbl-redio">220 X 220</label>
+              </div>
+              <div class="col-2">
+                <input
+                  type="radio"
+                  name="productType"
+                  id="2"
+                  class="hidebx"
+                  value=""
+                /><label for="2" class="lbl-redio">300 X 300</label>
+              </div>
+              <div class="col">
+                <input
+                  type="radio"
+                  name="productType"
+                  id="3"
+                  class="hidebx"
+                  value=""
+                /><label for="3" class="lbl-redio">440 X 440</label>
+              </div>
+              <div class="col">
+                <input
+                  type="radio"
+                  name="productType"
+                  id="4"
+                  class="hidebx"
+                  value=""
+                /><label for="4" class="lbl-redio">600 X 600</label>
               </div>
             </div>
+
+            <!-- Height -->
+            <div class="row selector">
+              <div class="col-3 offset-md-1">
+                <span class="productName"> height (mm) </span>
+              </div>
+              <div class="col">
+                <select class="form-select" aria-label="Default select example">
+                  <option value="1">150</option>
+                  <option value="2">160</option>
+                  <option value="3">170</option>
+                  <option value="4">180</option>
+                  <option value="5">190</option>
+                  <option value="6">200</option>
+                  <option value="7">210</option>
+                  <option value="8">220</option>
+                  <option value="9">230</option>
+                  <option value="10">240</option>
+                  <option value="11">250</option>
+                  <option value="12">260</option>
+                  <option value="13">270</option>
+                  <option value="14">280</option>
+                  <option value="15">290</option>
+                  <option value="15">300</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Nozzel -->
+            <div class="row selector">
+              <div class="col-3 offset-md-1">
+                <span class="productName">Nozzel</span>
+              </div>
+              <div class="col-2">
+                <input
+                  type="radio"
+                  name="productType"
+                  id="1"
+                  class="hidebx"
+                  value=""
+                /><label for="1" class="lbl-redio">Duel</label>
+              </div>
+              <div class="col">
+                <input
+                  type="radio"
+                  name="productType"
+                  id="1"
+                  class="hidebx"
+                  value=""
+                /><label for="1" class="lbl-redio">Single</label>
+              </div>
+            </div>
+
+            <!-- Display -->
+            <div class="row selector">
+                <div class="col-3 offset-md-1">
+                  <span class="productName">Display</span>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">Touch</label>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">Noob</label>
+                </div>
+                <div class="col">
+                    <input
+                      type="radio"
+                      name="productType"
+                      id="1"
+                      class="hidebx"
+                      value=""
+                    /><label for="1" class="lbl-redio">Touch + Noob</label>
+                  </div>
+              </div>
+
+              <!-- Motor Driver -->
+              <div class="row selector">
+                <div class="col-3 offset-md-1">
+                  <span class="productName">Motor Driver</span>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">Silent</label>
+                </div>
+                <div class="col">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">Normal</label>
+                </div>
+              </div>
+
+              <!-- cover -->
+              <div class="row selector">
+                <div class="col-3 offset-md-1">
+                  <span class="productName">Cover</span>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">Yes</label>
+                </div>
+                <div class="col">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">No</label>
+                </div>
+              </div>
+
+              <!-- Fillament Chamber -->
+              <div class="row selector">
+                <div class="col-3 offset-md-1">
+                  <span class="productName">Fillament Chamber</span>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">Yes</label>
+                </div>
+                <div class="col">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">No</label>
+                </div>
+              </div>
+
+              <!-- UPS Module -->
+              <div class="row selector">
+                <div class="col-3 offset-md-1">
+                  <span class="productName">UPS Module</span>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">Yes</label>
+                </div>
+                <div class="col">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">No</label>
+                </div>
+              </div>
+
+              <!-- Auto Bed Leveling -->
+              <div class="row selector">
+                <div class="col-3 offset-md-1">
+                  <span class="productName">Auto Bed Leveling</span>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">Yes</label>
+                </div>
+                <div class="col">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">No</label>
+                </div>
+              </div>
+              
+              <!-- Wifi Connectivity -->
+              <div class="row selector">
+                <div class="col-3 offset-md-1">
+                  <span class="productName">Wifi Connectivity</span>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">Yes</label>
+                </div>
+                <div class="col">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">No</label>
+                </div>
+              </div>
+
+              <!-- Fillament -->
+              <div class="row selector">
+                <div class="col-3 offset-md-1">
+                  <span class="productName">Fillament </span>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">1kg</label>
+                </div>
+                <div class="col-2">
+                  <input
+                    type="radio"
+                    name="productType"
+                    id="1"
+                    class="hidebx"
+                    value=""
+                  /><label for="1" class="lbl-redio">2kg</label>
+                </div>
+                <div class="col">
+                    <input
+                      type="radio"
+                      name="productType"
+                      id="1"
+                      class="hidebx"
+                      value=""
+                    /><label for="1" class="lbl-redio">3kg</label>
+                  </div>
+              </div>
           </div>
-          <div class="col"></div>
+          <div class="col">One of three columns</div>
         </div>
       </div>
     </section>
