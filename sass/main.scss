@@ -58,11 +58,7 @@ body {
 
   //bcakground of the header
   .welcome_bg {
-    background-image: linear-gradient(
-        to top right,
-        rgb(166, 23, 49),
-        rgba(242, 126, 157, 0.90)
-      ),
+    background-image: linear-gradient(to top right, rgb(166, 23, 49), rgba(242, 126, 157, 0.9)),
       url(../img/background-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -98,7 +94,7 @@ body {
         animation-name: moveInTop;
         animation-duration: 1s;
       }
-      &-title{
+      &-title {
         font-family: $secondary-font;
         font-size: 4rem;
         margin-bottom: 10px;
@@ -121,7 +117,7 @@ body {
         display: block;
         animation-name: moveInTop;
         animation-duration: 1s;
-  
+
         &:hover {
           text-decoration: none;
           color: $color-text-light;
@@ -160,14 +156,14 @@ body {
 }
 
 //product list
-.productCard_outer_div{
+.productCard_outer_div {
   max-width: 33%;
 }
-.padding_0{
+.padding_0 {
   padding-left: 0;
   padding-right: 0;
 }
-.margin_0{
+.margin_0 {
   margin-left: 0;
   margin-right: 0;
 }
@@ -213,14 +209,13 @@ body {
   &__img {
     right: 25px;
     top: 90px;
-    
+
     &-size {
       width: 100%;
       height: auto;
     }
   }
 }
-
 
 //Custom
 .topTitle {
@@ -366,6 +361,16 @@ input[type="radio"]:checked + .lbl-redio {
       padding: 2rem 8rem;
     }
   }
+  &-outlineDark{
+    border-color: $color-text-light;
+    border: 2px solid;
+    color: $color-text-light;
+    padding: 1rem 1rem;
+    //font-size: 1.6rem;
+    &:hover {
+      padding: 1.2rem 1.2rem;
+    }
+  }
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -380,6 +385,45 @@ input[type="radio"]:checked + .lbl-redio {
 }
 
 //customize
+
+.contentBox {
+  display: grid;
+  place-items: center;
+
+  .productPicInfo {
+    height: 500px;
+    width: 500px;
+    background-image: linear-gradient(to top, rgb(242, 29, 68), rgba(242, 126, 157, 0.9));
+    //background-color:$color-primaty;
+    border-radius: 12px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+
+    &-img {
+      width: 50%;
+      height: auto;
+    }
+    &-name{
+      font-family: $secondary-font;
+      color: $color-text-light;
+      font-size: 3.6rem;
+      margin-bottom: -2px;
+    }
+    &-price{
+      font-family: $secondary-font;
+      font-size: 2.4rem;
+    }
+
+    // &:hover {
+    //   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    //   transform: scale(1.1);
+    //   background-image: linear-gradient(to top, rgb(242, 29, 68), rgba(242, 126, 157, 0.9));
+    // }
+  }
+}
 
 //bg_color
 .pColor1 {
