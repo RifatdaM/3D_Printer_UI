@@ -101,6 +101,9 @@ body {
         animation-duration: 1s;
         margin-bottom: 64px; }
 
+.carousel-control-prev {
+  width: 60px; }
+
 .productCard_outer_div {
   max-width: 33%; }
 
