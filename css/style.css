@@ -201,7 +201,7 @@ input[type="radio"]:checked + .lbl-redio {
   border-radius: 6px;
   color: #330009; }
 
-.button:link, .button:visited {
+.buton:link, .buton:visited {
   text-decoration: none;
   text-transform: uppercase;
   font-family: bebas, "Poppins", sans-serif;
@@ -212,7 +212,7 @@ input[type="radio"]:checked + .lbl-redio {
   display: inline-block;
   transition: all 0.2s; }
 
-.button-white {
+.buton-white {
   background-color: #f2f2f2;
   color: #f21d44;
   padding: 29px 40px;
@@ -220,10 +220,10 @@ input[type="radio"]:checked + .lbl-redio {
   animation-duration: 1s;
   margin-right: 64px;
   margin-top: 40px; }
-  .button-white:hover {
+  .buton-white:hover {
     padding: 29px 50px; }
 
-.button-outline {
+.buton-outline {
   border-color: #f2f2f2;
   border: 2px solid;
   color: #f2f2f2;
@@ -231,17 +231,17 @@ input[type="radio"]:checked + .lbl-redio {
   margin-top: 40px;
   animation-name: moveInTop;
   animation-duration: 1s; }
-  .button-outline:hover {
+  .buton-outline:hover {
     padding: 29px 80px; }
 
-.button:hover {
+.buton:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   background-color: #f21d44;
   border: 0;
   color: #f2f2f2; }
 
-.button:active {
+.buton:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
